@@ -1,0 +1,48 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>株式会社ムトウ四国｜徳島の医療を支える求人</title><meta name="description" content="徳島県立中央病院・徳島県立海部病院で医療を支えるスタッフを募集。未経験歓迎。スマホから簡単応募。"><link rel="stylesheet" href="style.css"><style>
+html{scroll-behavior:smooth}body{overflow-x:hidden}
+@media(max-width:650px){
+ body{font-size:15px;line-height:1.6}
+ .hero-image{width:100%!important;height:auto!important;max-height:300px!important;object-fit:contain!important;background:#fff}
+ .hero-copy{padding:14px 14px 20px!important}
+ .hero-copy h1{font-size:clamp(16px,5vw,24px)!important;line-height:1.35!important;margin-bottom:7px!important;white-space:nowrap;letter-spacing:-0.03em}
+ .hero-copy p{font-size:14px!important;line-height:1.6!important;margin-bottom:10px!important}
+ .badges{gap:6px!important;margin:10px 0 15px!important}
+ .badges span{font-size:12px!important;padding:5px 9px!important}
+ .primary{width:100%;padding:13px 12px!important;font-size:16px!important}
+ main{padding:0 10px 20px!important}
+ section{margin:14px 0!important;padding:16px 12px!important;border-radius:15px!important}
+ h2{font-size:22px!important;margin-bottom:14px!important}
+ .jobs{grid-template-columns:1fr!important;gap:14px!important}
+ .job{padding:12px!important;border-radius:15px!important}
+ .job-photos{display:grid!important;grid-template-columns:1fr 1fr!important;gap:5px!important;margin:0 0 11px!important}
+ .job-photos img{width:100%!important;height:112px!important;object-fit:cover!important;border-radius:9px!important}
+ .job h3{font-size:18px!important;line-height:1.45!important;margin:9px 0 5px!important}
+ .job .pay{font-size:19px!important;margin:5px 0!important}
+ .job p{margin:6px 0!important;font-size:14px!important}
+ .job a{padding:12px 10px!important;margin-top:9px!important;width:100%!important;text-align:center}
+ .details{grid-template-columns:1fr!important;gap:2px!important}
+ .actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}
+ .actions a,.actions button{width:100%!important;text-align:center}
+ input,select,textarea{font-size:16px!important}
+ footer{font-size:12px!important;padding:22px 10px!important}
+}
+</style><style>
+.brand-bar{height:54px;background:#fff;display:flex;align-items:center;justify-content:flex-end;padding:7px 16px;border-bottom:1px solid #eef2f6}
+.brand-logo{display:block;width:auto;height:38px;max-width:180px;object-fit:contain}
+@media(max-width:650px){.brand-bar{height:44px;padding:6px 10px}.brand-logo{height:30px;max-width:140px}}
+</style></head><body><header><div class="brand-bar"><img class="brand-logo" src="assets/mutou-shikoku-logo.png" alt="ムトウ四国"></div><img class="hero-image" src="assets/hero.jpg" alt="一緒に医療を支える仲間を募集 SPD・CSSD業務"><div class="hero-copy"><h1>病院を支える仕事、はじめませんか？</h1><p>特別な経験は必要ありません。徳島の医療現場を、チームの一員として支える仕事です。</p><div class="badges"><span>未経験歓迎</span><span>週3〜5日</span><span>土日祝休み</span><span>スマホで簡単応募</span></div><a class="primary" href="#jobs">募集中の仕事を見る</a></div></header><main><section id="jobs"><h2>現在募集中のお仕事</h2><div class="jobs"><article class="job" data-job-id="chuo">
+<div class="job-photos">
+<img src="assets/chuo-work1.jpeg" alt="中央病院で医療器材を点検する仕事風景">
+<img src="assets/chuo-work3.png" alt="中央病院の中央材料室での仕事風景">
+</div>
+<span class="place">徳島市</span><h3>徳島県立中央病院<br>医療器材の洗浄・組立等</h3><p class="pay">時給1,200円〜</p><p>契約社員：月給190,000円<br>9:00〜20:00の間で5〜8時間<br>週3〜5日・土日祝休み</p><a href="job-chuo.html">中央病院の求人を見る</a></article><article class="job" data-job-id="kaifu"><div class="job-photos"><img src="assets/kaifu-work4.png" alt="海部病院で医療材料を確認・準備する仕事風景"><img src="assets/kaifu-work5.png" alt="海部病院で医療材料の在庫管理を行う仕事風景"></div><span class="place">牟岐町</span><h3>徳島県立海部病院<br>診療材料の院内搬送・管理</h3><p class="pay">時給1,200円</p><p>9:00〜17:00の間で4〜5時間<br>週3〜5日・土日祝休み</p><a href="job-kaifu.html">海部病院の求人を見る</a></article></div></section></main><footer>株式会社ムトウ四国｜採用サイト　<a href="privacy.html">プライバシーポリシー</a></footer><script src="recruit-config.js"></script>
+<script>
+document.querySelectorAll('[data-job-id]').forEach(card => {
+  const id = card.dataset.jobId;
+  if (window.RECRUIT_CONFIG?.jobs?.[id]?.active === false) card.remove();
+});
+const jobs = document.querySelector('.jobs');
+if (jobs && jobs.children.length === 0) {
+  jobs.innerHTML = '<p class="note" style="text-align:center">現在募集中の求人はありません。</p>';
+}
+</script></body></html>

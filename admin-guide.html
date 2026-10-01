@@ -1,0 +1,27 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>求人サイト運用メモ</title></head><body style="font-family:sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.8">
+<h1>求人サイト運用メモ</h1>
+<p><b>応募先電話番号：</b>087-815-5355</p>
+<p><b>応募通知先：</b><br>kazuhisa_kitamura@ni.wism-mutoh.co.jp<br>junji_konishi@ni.wism-mutoh.co.jp</p>
+<h2>募集を止める場合</h2>
+<p><code>recruit-config.js</code> の該当求人の <code>active: true</code> を <code>active: false</code> に変更してください。</p>
+<p>募集停止にすると、トップページの「現在募集中のお仕事」から該当求人が消え、応募フォームの選択肢からも外れます。求人詳細URLを直接開いた場合も応募ボタンを非表示にします。</p>
+<p>再募集時は <code>false</code> を <code>true</code> に戻します。</p>
+<p><b>2026年10月5日公開時：</b>中央病院＝募集停止／海部病院＝募集中</p>
+<p>※写真アップロードは使用しません。応募フォームはテキスト情報のみとし、無料枠を利用したフォーム送信サービスへの接続を予定しています。現時点では実メール送信機能はまだ接続されていません。</p>
+</body></html>
+<hr>
+<h2>Formspree接続</h2>
+<p>送信先Endpoint：<code>https://formspree.io/f/mjykljeq</code></p>
+<p>応募フォームはFormspreeへPOST送信する設定に変更済みです。</p>
+<p>本番公開前に中央病院・海部病院の両方でテスト応募し、通知メールの受信を確認してください。</p>
+
+<hr>
+<h2>通知メールの求人名表示</h2>
+<p>Formspree通知メールには、内部コード（chuo / kaifu）ではなく、
+「徳島県立中央病院」または「徳島県立海部病院」と日本語で送信する設定に変更済みです。</p>
+
+<hr>
+<h2>Ver.16 修正</h2>
+<p>通知メールの「希望求人」は内部コードではなく、
+「徳島県立中央病院」または「徳島県立海部病院」と日本語で送信されるよう修正しました。</p>
