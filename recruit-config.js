@@ -5,7 +5,7 @@ window.RECRUIT_CONFIG = {
   phoneTel: "0878155355",
   notificationEmails: ["kazuhisa_kitamura@ni.wism-mutoh.co.jp", "junji_konishi@ni.wism-mutoh.co.jp"],
   jobs: {
-    chuo: { active: false },
+    chuo: { active: true },
     kaifu: { active: true }
   }
 };
